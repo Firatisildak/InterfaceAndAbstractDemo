@@ -1,9 +1,10 @@
-﻿using InterfaceAbstractDemo.Abstract;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using InterfaceAbstractDemo.Entities;
+using InterfaceAbstractDemo.Abstract;
 
 namespace InterfaceAbstractDemo.Concrete
 {
@@ -18,7 +19,8 @@ namespace InterfaceAbstractDemo.Concrete
 
         public override void Save(Customer customer)
         {
-            if (_customerCheckService.CheckIfRealPerson(customer)){
+            if (_customerCheckService.CheckIfRealPerson(customer))
+            {
                 base.Save(customer);
             }
             else

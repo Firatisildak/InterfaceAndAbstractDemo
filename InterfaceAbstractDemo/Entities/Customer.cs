@@ -1,6 +1,6 @@
-﻿using InterfaceAbstractDemo.Abstract;
-
-namespace InterfaceAbstractDemo
+﻿using System;
+using InterfaceAbstractDemo.Abstract;
+namespace InterfaceAbstractDemo.Entities
 {
     public class Customer : IEntity
     {
